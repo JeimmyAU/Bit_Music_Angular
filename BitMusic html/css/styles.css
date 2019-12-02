@@ -1,0 +1,111 @@
+* {
+    /* lo que se aplica a toda la pagina  */
+    margin: 0px;
+    padding: 0px;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+body {
+    background-image: url(../img/fondo.jpg);
+    /* nunca se termina la imagen */
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: cover;
+    background-size: center center;
+}
+
+h1 {
+    font-size: 40px;
+    color: rgb(207, 211, 211);
+}
+
+h2 {
+    font-size: 20px;
+    color: rgb(207, 211, 211);
+}
+
+p {
+    font-size: 15px;
+    color: rgb(207, 211, 211);
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    align-content: center;
+}
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+    /* margin-top: 30px; */
+    padding: 100px 0px 0px 0px;
+    box-shadow: 1px 1px 1px gold;
+    /* background-color: gray; */
+    /* border: 1px 1px 1px gold; */
+    opacity: 1;
+    /* grid****** */
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 10% 65% 20%;
+    grid-template-areas: "menu2  contenido  aside";
+}
+
+.contenedor .menu2 {
+    /* width: 15%;
+    height: 100%; */
+    grid-area: menu2;
+}
+
+
+/***************************** menu de navegacion 2  ********************************************/
+
+.menu2 {
+    width: auto;
+    /* float: left; */
+    /* margin-top: 19px; */
+    margin-right: 5%;
+    /* margin-bottom: auto; */
+    /* position: fixed; */
+    /* box-shadow: 1px 1px 1px red; */
+    /* background-attachment: box; */
+}
+
+.menu2 ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    line-height: 80px;
+    background-color: black;
+}
+
+.menu2 li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.menu2 ul li:hover {
+    background-color: rgb(114, 230, 250);
+    transition: 0.8s all;
+}
+
+.contenedor .contenido1 {
+    /* width: 100%; */
+    /* width: 70%; */
+    float: none;
+    grid-area: contenido;
+    color: whitesmoke;
+}
+
+.contenedor .contenido2 {
+    /* width: 33.32%; */
+    /* width: 30%; */
+    /* float: right; */
+    grid-area: aside;
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+}
